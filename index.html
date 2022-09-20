@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;}
+
+.body{
+    background-color: #ddd;
+}
+
+.container
+{
+    /*background-color: rgb(238, 181, 95);*/
+    margin: 10px;
+    height: 768px;
+    display: flex;
+    align-content: center; 
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid rgb(63, 56, 56);
+    border-radius: 6px;
+    flex: 1; 
+    
+}
+
+.item
+{
+    display: flex;
+   background-color: #FFF;
+   color: rgba(119, 112, 148, 0.74);
+   flex-basis: 50%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   margin: auto;
+   height: 100%;
+
+}
+
+.login{
+    /*background-color: #ff0037;
+    color :rgba(50, 175, 67, 0.89);*/
+    margin: 23%;
+    padding: 10px;
+    flex-direction: column;
+    padding: auto;
+    height: 50%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+
+
+}
+
+#photo.item{
+background-image: 
+url(https://cdn-3.expansion.mx/4b/32/19635735424eb472f93f4279a819/dia-del-estudiante-2022-mexico.jpg);
+background-position: center;
+}
+
+.login>h1{
+    font-size: 44px;
+    color: rgba(16, 15, 17, 0.932);
+}
+
+.login>h3{
+    font-size: 20px;
+    color: rgb(59, 58, 61);
+    margin-top: 0;
+}
+
+.form-element{
+    width: auto;
+}
+
+#member{
+    align-self: flex start;
+}
+
+.remember{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #666;
+}
+
+
+#email, #pass {
+    width: 100%;
+    height: 25px;
+    margin: 0px;
+    
+}
+
+.signup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #666;
+}
+
+
+.lorem
+{
+    color: rgba(100, 94, 9, 0.699);
+    margin: 7%;
+    padding:10px;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(95, 94, 94, 0.877);
+    border-radius: 3px;
+    align-self: flex-end;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    
+}
+.button{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    justify-content: center;
+    flex-direction: row;
+    background-color:  rgb(16, 15, 17, 0.932);
+    border: 4px solid rgb(16, 15, 17, 0.932);
+    border-radius: 7px;
+}
+button>strong {
+    color: white;
+    
+    margin: auto;/*
+    align-self: center;
+    align-content: center;
+    padding: auto;
+    width: 99%;
+    height: 99%;;*/
+}
+    </style>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="item">
+            <div class="login">
+                <h1>Welcome back</h1>
+                <h3>Welcome back! Please enter your details</h3>
+
+                <form>                    
+                    <div class="form-element">
+                        <p><label for="email">E-Mail:</label></p>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="form-element">
+                        <p><label for="pass">Password:</label></p>
+                        
+                        <input type="password" name="pass" id="pass" width="max">
+        
+                    </div>
+
+                    <div class="remember">
+                        <div class="option"><input type="checkbox" id="member" name="member" value="0">
+                            <label for="member">Remember for 30 days</label></div>
+                        <div class="option"> 
+                            <strong> <a href="https://support.google.com/mail/answer/41078?hl=en&co=GENIE.Platform%3DDesktop" 
+                            target="_blank">Forgot Password</a></strong>
+                             </div>
+                    </div>
+
+
+                </form>
+
+                <button class="button" id="button"><strong>Sign in</a></Strong></button> 
+                <p><center>Don't have an account? <strong><a 
+                    href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp" 
+                    target="_self">Sign up for free</a> </strong></center></p>
+
+                
+
+
+            </div>
+        </div>
+        <div class="item" id="photo">
+            <div class="lorem"><strong><i>
+                "Est eveniet dolor et voluptatem quisquam et alias vel nihil voluptates! Quo saepe assumenda 33 quae 
+                Quis id saepe reprehenderit ut quae eveniet sed omnis quia in quas doloremque ut quod quia."
+            </i></strong>
+        </div>
+    </div>
+</body>
+</html>
